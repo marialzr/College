@@ -1,0 +1,6930 @@
+Current id: [1]
+ExeStack:
+	(((newH( v1, 2) ; newH( v2, 3)) ; (newH( v3, 4) ; NewLatch(cnt, readH(v2)))) ; 
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) ))
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+Out:
+FileTable:
+Heap:
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	((newH( v1, 2) ; newH( v2, 3)) ; (newH( v3, 4) ; NewLatch(cnt, readH(v2))))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+Out:
+FileTable:
+Heap:
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	(newH( v1, 2) ; newH( v2, 3))
+	(newH( v3, 4) ; NewLatch(cnt, readH(v2)))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+Out:
+FileTable:
+Heap:
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	newH( v1, 2)
+	newH( v2, 3)
+	(newH( v3, 4) ; NewLatch(cnt, readH(v2)))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+Out:
+FileTable:
+Heap:
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	newH( v2, 3)
+	(newH( v3, 4) ; NewLatch(cnt, readH(v2)))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	v1-->2
+Out:
+FileTable:
+Heap:
+	2-->2
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	(newH( v3, 4) ; NewLatch(cnt, readH(v2)))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	v1-->2
+	v2-->3
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	newH( v3, 4)
+	NewLatch(cnt, readH(v2))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	v1-->2
+	v2-->3
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	NewLatch(cnt, readH(v2))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+	((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) )))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	(Await(cnt) ; Print(100))
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+	(WriteH( v1,readH(v1)  * 10) ; Print(readH(v1)))
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+	WriteH( v1,readH(v1)  * 10)
+	Print(readH(v1))
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	(((newH( v1, 2) ; newH( v2, 3)) ; (newH( v3, 4) ; NewLatch(cnt, readH(v2)))) ; 
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) ))
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+Out:
+FileTable:
+Heap:
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	((newH( v1, 2) ; newH( v2, 3)) ; (newH( v3, 4) ; NewLatch(cnt, readH(v2))))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+Out:
+FileTable:
+Heap:
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	(newH( v1, 2) ; newH( v2, 3))
+	(newH( v3, 4) ; NewLatch(cnt, readH(v2)))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+Out:
+FileTable:
+Heap:
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	newH( v1, 2)
+	newH( v2, 3)
+	(newH( v3, 4) ; NewLatch(cnt, readH(v2)))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+Out:
+FileTable:
+Heap:
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	newH( v2, 3)
+	(newH( v3, 4) ; NewLatch(cnt, readH(v2)))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	v1-->2
+Out:
+FileTable:
+Heap:
+	2-->2
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	(newH( v3, 4) ; NewLatch(cnt, readH(v2)))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	v1-->2
+	v2-->3
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	newH( v3, 4)
+	NewLatch(cnt, readH(v2))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	v1-->2
+	v2-->3
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	NewLatch(cnt, readH(v2))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+	((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) )))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	(Await(cnt) ; Print(100))
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+	(WriteH( v1,readH(v1)  * 10) ; Print(readH(v1)))
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+	WriteH( v1,readH(v1)  * 10)
+	Print(readH(v1))
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+	Print(readH(v1))
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+	CountDown(cnt)
+	
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) )
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+	
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) )
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [7]
+ExeStack:
+	((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) )))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [7]
+ExeStack:
+	(WriteH( v2,readH(v2)  * 10) ; Print(readH(v2)))
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [7]
+ExeStack:
+	WriteH( v2,readH(v2)  * 10)
+	Print(readH(v2))
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [7]
+ExeStack:
+	Print(readH(v2))
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [7]
+ExeStack:
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [7]
+ExeStack:
+	CountDown(cnt)
+	
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) )
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [7]
+ExeStack:
+	
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) )
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [7]
+ExeStack:
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [8]
+ExeStack:
+	((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [8]
+ExeStack:
+	(WriteH( v3,readH(v3)  * 10) ; Print(readH(v3)))
+	CountDown(cnt)
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [8]
+ExeStack:
+	WriteH( v3,readH(v3)  * 10)
+	Print(readH(v3))
+	CountDown(cnt)
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [8]
+ExeStack:
+	Print(readH(v3))
+	CountDown(cnt)
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+	40
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [8]
+ExeStack:
+	CountDown(cnt)
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+	40
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+	40
+	8
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->0
+__________________________________________________________________________________________________
+Current id: [8]
+ExeStack:
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+	40
+	8
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->0
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+	40
+	8
+	100
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->0
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	CountDown(cnt)
+	Print(100)
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+	40
+	8
+	100
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->0
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Print(100)
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+	40
+	8
+	100
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->0
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+	40
+	8
+	100
+	100
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->0
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	(((newH( v1, 2) ; newH( v2, 3)) ; (newH( v3, 4) ; NewLatch(cnt, readH(v2)))) ; 
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) ))
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+Out:
+FileTable:
+Heap:
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	((newH( v1, 2) ; newH( v2, 3)) ; (newH( v3, 4) ; NewLatch(cnt, readH(v2))))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+Out:
+FileTable:
+Heap:
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	(newH( v1, 2) ; newH( v2, 3))
+	(newH( v3, 4) ; NewLatch(cnt, readH(v2)))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+Out:
+FileTable:
+Heap:
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	newH( v1, 2)
+	newH( v2, 3)
+	(newH( v3, 4) ; NewLatch(cnt, readH(v2)))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+Out:
+FileTable:
+Heap:
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	newH( v2, 3)
+	(newH( v3, 4) ; NewLatch(cnt, readH(v2)))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	v1-->2
+Out:
+FileTable:
+Heap:
+	2-->2
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	(newH( v3, 4) ; NewLatch(cnt, readH(v2)))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	v1-->2
+	v2-->3
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	newH( v3, 4)
+	NewLatch(cnt, readH(v2))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	v1-->2
+	v2-->3
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	NewLatch(cnt, readH(v2))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+	((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) )))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	(Await(cnt) ; Print(100))
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+	(WriteH( v1,readH(v1)  * 10) ; Print(readH(v1)))
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+	WriteH( v1,readH(v1)  * 10)
+	Print(readH(v1))
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+	Print(readH(v1))
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+	CountDown(cnt)
+	
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) )
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+	
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) )
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [7]
+ExeStack:
+	((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) )))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [7]
+ExeStack:
+	(WriteH( v2,readH(v2)  * 10) ; Print(readH(v2)))
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [7]
+ExeStack:
+	WriteH( v2,readH(v2)  * 10)
+	Print(readH(v2))
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [7]
+ExeStack:
+	Print(readH(v2))
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [7]
+ExeStack:
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [7]
+ExeStack:
+	CountDown(cnt)
+	
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) )
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [7]
+ExeStack:
+	
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) )
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [7]
+ExeStack:
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [8]
+ExeStack:
+	((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [8]
+ExeStack:
+	(WriteH( v3,readH(v3)  * 10) ; Print(readH(v3)))
+	CountDown(cnt)
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [8]
+ExeStack:
+	WriteH( v3,readH(v3)  * 10)
+	Print(readH(v3))
+	CountDown(cnt)
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [8]
+ExeStack:
+	Print(readH(v3))
+	CountDown(cnt)
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+	40
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [8]
+ExeStack:
+	CountDown(cnt)
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+	40
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+	40
+	8
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->0
+__________________________________________________________________________________________________
+Current id: [8]
+ExeStack:
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+	40
+	8
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->0
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+	40
+	8
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->0
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+	40
+	8
+	100
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->0
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	CountDown(cnt)
+	Print(100)
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+	40
+	8
+	100
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->0
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Print(100)
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+	40
+	8
+	100
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->0
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+	40
+	8
+	100
+	100
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->0
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	(((newH( v1, 2) ; newH( v2, 3)) ; (newH( v3, 4) ; NewLatch(cnt, readH(v2)))) ; 
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) ))
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+Out:
+FileTable:
+Heap:
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	((newH( v1, 2) ; newH( v2, 3)) ; (newH( v3, 4) ; NewLatch(cnt, readH(v2))))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+Out:
+FileTable:
+Heap:
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	(newH( v1, 2) ; newH( v2, 3))
+	(newH( v3, 4) ; NewLatch(cnt, readH(v2)))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+Out:
+FileTable:
+Heap:
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	newH( v1, 2)
+	newH( v2, 3)
+	(newH( v3, 4) ; NewLatch(cnt, readH(v2)))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+Out:
+FileTable:
+Heap:
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	newH( v2, 3)
+	(newH( v3, 4) ; NewLatch(cnt, readH(v2)))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	v1-->2
+Out:
+FileTable:
+Heap:
+	2-->2
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	(newH( v3, 4) ; NewLatch(cnt, readH(v2)))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	v1-->2
+	v2-->3
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	newH( v3, 4)
+	NewLatch(cnt, readH(v2))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	v1-->2
+	v2-->3
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	NewLatch(cnt, readH(v2))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+	((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) )))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	(Await(cnt) ; Print(100))
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+	(WriteH( v1,readH(v1)  * 10) ; Print(readH(v1)))
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+	WriteH( v1,readH(v1)  * 10)
+	Print(readH(v1))
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+	Print(readH(v1))
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+	CountDown(cnt)
+	
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) )
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+	
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) )
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [7]
+ExeStack:
+	((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) )))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [7]
+ExeStack:
+	(WriteH( v2,readH(v2)  * 10) ; Print(readH(v2)))
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [7]
+ExeStack:
+	WriteH( v2,readH(v2)  * 10)
+	Print(readH(v2))
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [7]
+ExeStack:
+	Print(readH(v2))
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [7]
+ExeStack:
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [7]
+ExeStack:
+	CountDown(cnt)
+	
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) )
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [7]
+ExeStack:
+	
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) )
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [7]
+ExeStack:
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [8]
+ExeStack:
+	((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [8]
+ExeStack:
+	(WriteH( v3,readH(v3)  * 10) ; Print(readH(v3)))
+	CountDown(cnt)
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [8]
+ExeStack:
+	WriteH( v3,readH(v3)  * 10)
+	Print(readH(v3))
+	CountDown(cnt)
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [8]
+ExeStack:
+	Print(readH(v3))
+	CountDown(cnt)
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+	40
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [8]
+ExeStack:
+	CountDown(cnt)
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+	40
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+	40
+	8
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->0
+__________________________________________________________________________________________________
+Current id: [8]
+ExeStack:
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+	40
+	8
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->0
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+	40
+	8
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->0
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+	40
+	8
+	100
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->0
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	CountDown(cnt)
+	Print(100)
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+	40
+	8
+	100
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->0
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Print(100)
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+	40
+	8
+	100
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->0
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+	40
+	8
+	100
+	100
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->0
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	(((newH( v1, 2) ; newH( v2, 3)) ; (newH( v3, 4) ; NewLatch(cnt, readH(v2)))) ; 
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) ))
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+Out:
+FileTable:
+Heap:
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	((newH( v1, 2) ; newH( v2, 3)) ; (newH( v3, 4) ; NewLatch(cnt, readH(v2))))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+Out:
+FileTable:
+Heap:
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	(newH( v1, 2) ; newH( v2, 3))
+	(newH( v3, 4) ; NewLatch(cnt, readH(v2)))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+Out:
+FileTable:
+Heap:
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	newH( v1, 2)
+	newH( v2, 3)
+	(newH( v3, 4) ; NewLatch(cnt, readH(v2)))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+Out:
+FileTable:
+Heap:
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	newH( v2, 3)
+	(newH( v3, 4) ; NewLatch(cnt, readH(v2)))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	v1-->2
+Out:
+FileTable:
+Heap:
+	2-->2
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	(newH( v3, 4) ; NewLatch(cnt, readH(v2)))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	v1-->2
+	v2-->3
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	newH( v3, 4)
+	NewLatch(cnt, readH(v2))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	v1-->2
+	v2-->3
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	NewLatch(cnt, readH(v2))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+	((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) )))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	(Await(cnt) ; Print(100))
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+	(WriteH( v1,readH(v1)  * 10) ; Print(readH(v1)))
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+	WriteH( v1,readH(v1)  * 10)
+	Print(readH(v1))
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+	Print(readH(v1))
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+	CountDown(cnt)
+	
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) )
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+	
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) )
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [7]
+ExeStack:
+	((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) )))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [7]
+ExeStack:
+	(WriteH( v2,readH(v2)  * 10) ; Print(readH(v2)))
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [7]
+ExeStack:
+	WriteH( v2,readH(v2)  * 10)
+	Print(readH(v2))
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [7]
+ExeStack:
+	Print(readH(v2))
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [7]
+ExeStack:
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [7]
+ExeStack:
+	CountDown(cnt)
+	
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) )
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [7]
+ExeStack:
+	
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) )
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [7]
+ExeStack:
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [8]
+ExeStack:
+	((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [8]
+ExeStack:
+	(WriteH( v3,readH(v3)  * 10) ; Print(readH(v3)))
+	CountDown(cnt)
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [8]
+ExeStack:
+	WriteH( v3,readH(v3)  * 10)
+	Print(readH(v3))
+	CountDown(cnt)
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [8]
+ExeStack:
+	Print(readH(v3))
+	CountDown(cnt)
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+	40
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [8]
+ExeStack:
+	CountDown(cnt)
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+	40
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+	40
+	8
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->0
+__________________________________________________________________________________________________
+Current id: [8]
+ExeStack:
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+	40
+	8
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->0
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+	40
+	8
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->0
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+	40
+	8
+	100
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->0
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	CountDown(cnt)
+	Print(100)
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+	40
+	8
+	100
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->0
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Print(100)
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+	40
+	8
+	100
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->0
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+	40
+	8
+	100
+	100
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->0
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	(((newH( v1, 2) ; newH( v2, 3)) ; (newH( v3, 4) ; NewLatch(cnt, readH(v2)))) ; 
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) ))
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+Out:
+FileTable:
+Heap:
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	((newH( v1, 2) ; newH( v2, 3)) ; (newH( v3, 4) ; NewLatch(cnt, readH(v2))))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+Out:
+FileTable:
+Heap:
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	(newH( v1, 2) ; newH( v2, 3))
+	(newH( v3, 4) ; NewLatch(cnt, readH(v2)))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+Out:
+FileTable:
+Heap:
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	newH( v1, 2)
+	newH( v2, 3)
+	(newH( v3, 4) ; NewLatch(cnt, readH(v2)))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+Out:
+FileTable:
+Heap:
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	newH( v2, 3)
+	(newH( v3, 4) ; NewLatch(cnt, readH(v2)))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	v1-->2
+Out:
+FileTable:
+Heap:
+	2-->2
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	(newH( v3, 4) ; NewLatch(cnt, readH(v2)))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	v1-->2
+	v2-->3
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	newH( v3, 4)
+	NewLatch(cnt, readH(v2))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	v1-->2
+	v2-->3
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	NewLatch(cnt, readH(v2))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+	((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) )))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	(Await(cnt) ; Print(100))
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+	(WriteH( v1,readH(v1)  * 10) ; Print(readH(v1)))
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+	WriteH( v1,readH(v1)  * 10)
+	Print(readH(v1))
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+	Print(readH(v1))
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+	CountDown(cnt)
+	
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) )
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+	
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) )
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [7]
+ExeStack:
+	((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) )))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [7]
+ExeStack:
+	(WriteH( v2,readH(v2)  * 10) ; Print(readH(v2)))
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [7]
+ExeStack:
+	WriteH( v2,readH(v2)  * 10)
+	Print(readH(v2))
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [7]
+ExeStack:
+	Print(readH(v2))
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [7]
+ExeStack:
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	(((newH( v1, 2) ; newH( v2, 3)) ; (newH( v3, 4) ; NewLatch(cnt, readH(v2)))) ; 
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) ))
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+Out:
+FileTable:
+Heap:
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	((newH( v1, 2) ; newH( v2, 3)) ; (newH( v3, 4) ; NewLatch(cnt, readH(v2))))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+Out:
+FileTable:
+Heap:
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	(newH( v1, 2) ; newH( v2, 3))
+	(newH( v3, 4) ; NewLatch(cnt, readH(v2)))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+Out:
+FileTable:
+Heap:
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	newH( v1, 2)
+	newH( v2, 3)
+	(newH( v3, 4) ; NewLatch(cnt, readH(v2)))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+Out:
+FileTable:
+Heap:
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	newH( v2, 3)
+	(newH( v3, 4) ; NewLatch(cnt, readH(v2)))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	v1-->2
+Out:
+FileTable:
+Heap:
+	2-->2
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	(newH( v3, 4) ; NewLatch(cnt, readH(v2)))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	v1-->2
+	v2-->3
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	newH( v3, 4)
+	NewLatch(cnt, readH(v2))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	v1-->2
+	v2-->3
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	NewLatch(cnt, readH(v2))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	(((newH( v1, 2) ; newH( v2, 3)) ; (newH( v3, 4) ; NewLatch(cnt, readH(v2)))) ; 
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) ))
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+Out:
+FileTable:
+Heap:
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	((newH( v1, 2) ; newH( v2, 3)) ; (newH( v3, 4) ; NewLatch(cnt, readH(v2))))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+Out:
+FileTable:
+Heap:
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	(newH( v1, 2) ; newH( v2, 3))
+	(newH( v3, 4) ; NewLatch(cnt, readH(v2)))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+Out:
+FileTable:
+Heap:
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	newH( v1, 2)
+	newH( v2, 3)
+	(newH( v3, 4) ; NewLatch(cnt, readH(v2)))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+Out:
+FileTable:
+Heap:
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	newH( v2, 3)
+	(newH( v3, 4) ; NewLatch(cnt, readH(v2)))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	v1-->2
+Out:
+FileTable:
+Heap:
+	2-->2
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	(newH( v3, 4) ; NewLatch(cnt, readH(v2)))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	v1-->2
+	v2-->3
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	(((newH( v1, 2) ; newH( v2, 3)) ; (newH( v3, 4) ; NewLatch(cnt, readH(v2)))) ; 
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) ))
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+Out:
+FileTable:
+Heap:
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	((newH( v1, 2) ; newH( v2, 3)) ; (newH( v3, 4) ; NewLatch(cnt, readH(v2))))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+Out:
+FileTable:
+Heap:
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	(newH( v1, 2) ; newH( v2, 3))
+	(newH( v3, 4) ; NewLatch(cnt, readH(v2)))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+Out:
+FileTable:
+Heap:
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	newH( v1, 2)
+	newH( v2, 3)
+	(newH( v3, 4) ; NewLatch(cnt, readH(v2)))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+Out:
+FileTable:
+Heap:
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	newH( v2, 3)
+	(newH( v3, 4) ; NewLatch(cnt, readH(v2)))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	v1-->2
+Out:
+FileTable:
+Heap:
+	2-->2
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	(newH( v3, 4) ; NewLatch(cnt, readH(v2)))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	v1-->2
+	v2-->3
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	newH( v3, 4)
+	NewLatch(cnt, readH(v2))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	v1-->2
+	v2-->3
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	NewLatch(cnt, readH(v2))
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	
+Fork( ((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))) )
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	((Await(cnt) ; Print(100)) ; (CountDown(cnt) ; Print(100)))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+	((WriteH( v1,readH(v1)  * 10) ; Print(readH(v1))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) )))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	(Await(cnt) ; Print(100))
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+	(WriteH( v1,readH(v1)  * 10) ; Print(readH(v1)))
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+	WriteH( v1,readH(v1)  * 10)
+	Print(readH(v1))
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->2
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+	Print(readH(v1))
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+	CountDown(cnt)
+	
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) )
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->3
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+	
+Fork( ((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))) )
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [6]
+ExeStack:
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [7]
+ExeStack:
+	((WriteH( v2,readH(v2)  * 10) ; Print(readH(v2))) ; (CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) )))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [7]
+ExeStack:
+	(WriteH( v2,readH(v2)  * 10) ; Print(readH(v2)))
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [7]
+ExeStack:
+	WriteH( v2,readH(v2)  * 10)
+	Print(readH(v2))
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->3
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [7]
+ExeStack:
+	Print(readH(v2))
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [7]
+ExeStack:
+	(CountDown(cnt) ; 
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) ))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [7]
+ExeStack:
+	CountDown(cnt)
+	
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) )
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->2
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [7]
+ExeStack:
+	
+Fork( ((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt)) )
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [7]
+ExeStack:
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [8]
+ExeStack:
+	((WriteH( v3,readH(v3)  * 10) ; Print(readH(v3))) ; CountDown(cnt))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [8]
+ExeStack:
+	(WriteH( v3,readH(v3)  * 10) ; Print(readH(v3)))
+	CountDown(cnt)
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [8]
+ExeStack:
+	WriteH( v3,readH(v3)  * 10)
+	Print(readH(v3))
+	CountDown(cnt)
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->4
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [8]
+ExeStack:
+	Print(readH(v3))
+	CountDown(cnt)
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+	40
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [8]
+ExeStack:
+	CountDown(cnt)
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+	40
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->1
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Await(cnt)
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+	40
+	8
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->0
+__________________________________________________________________________________________________
+Current id: [8]
+ExeStack:
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+	40
+	8
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->0
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Print(100)
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+	40
+	8
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->0
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	(CountDown(cnt) ; Print(100))
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+	40
+	8
+	100
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->0
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	CountDown(cnt)
+	Print(100)
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+	40
+	8
+	100
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->0
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+	Print(100)
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+	40
+	8
+	100
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->0
+__________________________________________________________________________________________________
+Current id: [1]
+ExeStack:
+SymTable:
+	cnt-->5
+	v1-->2
+	v2-->3
+	v3-->4
+Out:
+	20
+	6
+	30
+	7
+	40
+	8
+	100
+	100
+FileTable:
+Heap:
+	2-->20
+	3-->30
+	4-->40
+Latch Table:
+	5-->0
+__________________________________________________________________________________________________

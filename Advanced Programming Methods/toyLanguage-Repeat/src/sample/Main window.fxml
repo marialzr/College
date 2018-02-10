@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainWindowController">
+   <children>
+      <VBox>
+         <children>
+            <HBox alignment="TOP_CENTER">
+               <children>
+                  <VBox alignment="TOP_CENTER">
+                     <children>
+                        <Label text="Heap" />
+                        <TableView fx:id="heapTableView" prefHeight="200.0" prefWidth="200.0">
+                          <columns>
+                            <TableColumn fx:id="addressColumn" prefWidth="102.4000244140625" text="Address" />
+                            <TableColumn fx:id="valueColumn" prefWidth="96.79998779296875" text="Value" />
+                          </columns>
+                        </TableView>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER">
+                     <children>
+                        <Label text="File Table" />
+                        <TableView fx:id="fileTableView" prefHeight="200.0" prefWidth="200.0">
+                          <columns>
+                            <TableColumn fx:id="identifierColumn" prefWidth="100.79998779296875" text="Identifier" />
+                            <TableColumn fx:id="FileNameColumn" prefWidth="96.800048828125" text="File Name" />
+                          </columns>
+                        </TableView>
+                     </children>
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER">
+                     <children>
+                        <Label text="Out" />
+                        <ListView fx:id="outListView" prefHeight="200.0" prefWidth="200.0" />
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="46.0" prefWidth="640.0" />
+            <HBox alignment="TOP_CENTER">
+               <children>
+                  <VBox alignment="TOP_CENTER">
+                     <children>
+                        <Label text="Program States" />
+                        <ListView fx:id="statesListView" prefHeight="200.0" prefWidth="200.0">
+                           <padding>
+                              <Insets right="20.0" />
+                           </padding></ListView>
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER">
+                     <children>
+                        <Label text="Symbol Table" />
+                        <TableView fx:id="symTableView" prefHeight="200.0" prefWidth="200.0">
+                          <columns>
+                            <TableColumn fx:id="nameColumn" prefWidth="98.39996337890625" text="Name" />
+                            <TableColumn fx:id="valueColumnSymTbl" prefWidth="101.60003662109375" text="Value" />
+                          </columns>
+                        </TableView>
+                     </children>
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER">
+                     <children>
+                        <Label text="Execution Stack" />
+                        <ListView fx:id="exeStackView" prefHeight="200.0" prefWidth="200.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="171.0" text="Number of Program states">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="number" prefHeight="26.0" prefWidth="50.0" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="100.0" top="10.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets bottom="20.0" top="20.0" />
+               </opaqueInsets>
+            </HBox>
+            <HBox alignment="CENTER">
+               <children>
+                  <Button fx:id="runButton" alignment="CENTER" mnemonicParsing="false" onAction="#runOneStep" text="RunOneStep" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="20.0" />
+               </padding>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
