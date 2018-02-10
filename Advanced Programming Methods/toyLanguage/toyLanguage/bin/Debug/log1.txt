@@ -1,0 +1,781 @@
+Exe stack: 
+((OpenRFile (varf,read.txt)) ( ReadFile(varf,varc))) 
+(( Print varc ) CloseRFile(varf)) 
+
+Symbol table: 
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+(OpenRFile (varf,read.txt)) 
+( ReadFile(varf,varc)) 
+(( Print varc ) CloseRFile(varf)) 
+
+Symbol table: 
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+( ReadFile(varf,varc)) 
+(( Print varc ) CloseRFile(varf)) 
+
+Symbol table: 
+varf 1
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+(( Print varc ) CloseRFile(varf)) 
+
+Symbol table: 
+varf 1
+varc 2
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+( Print varc ) 
+CloseRFile(varf) 
+
+Symbol table: 
+varf 1
+varc 2
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+CloseRFile(varf) 
+
+Symbol table: 
+varf 1
+varc 2
+
+Messages:
+2 
+
+------------------------------------------------------------------------
+Exe stack: 
+
+Symbol table: 
+varf 1
+varc 2
+
+Messages:
+2 
+
+------------------------------------------------------------------------
+Exe stack: 
+((OpenRFile (varf,read.txt)) ( ReadFile(varf,varc))) 
+(( Print varc ) CloseRFile(varf)) 
+
+Symbol table: 
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+(OpenRFile (varf,read.txt)) 
+( ReadFile(varf,varc)) 
+(( Print varc ) CloseRFile(varf)) 
+
+Symbol table: 
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+( ReadFile(varf,varc)) 
+(( Print varc ) CloseRFile(varf)) 
+
+Symbol table: 
+varf 1
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+(( Print varc ) CloseRFile(varf)) 
+
+Symbol table: 
+varf 1
+varc 2
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+( Print varc ) 
+CloseRFile(varf) 
+
+Symbol table: 
+varf 1
+varc 2
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+CloseRFile(varf) 
+
+Symbol table: 
+varf 1
+varc 2
+
+Messages:
+2 
+
+------------------------------------------------------------------------
+Exe stack: 
+
+Symbol table: 
+varf 1
+varc 2
+
+Messages:
+2 
+
+------------------------------------------------------------------------
+Exe stack: 
+((OpenRFile (varf,read.txt)) ( ReadFile(varf,varc))) 
+(( Print varc ) CloseRFile(varf)) 
+
+Symbol table: 
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+(OpenRFile (varf,read.txt)) 
+( ReadFile(varf,varc)) 
+(( Print varc ) CloseRFile(varf)) 
+
+Symbol table: 
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+( ReadFile(varf,varc)) 
+(( Print varc ) CloseRFile(varf)) 
+
+Symbol table: 
+varf 1
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+(( Print varc ) CloseRFile(varf)) 
+
+Symbol table: 
+varf 1
+varc 2
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+( Print varc ) 
+CloseRFile(varf) 
+
+Symbol table: 
+varf 1
+varc 2
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+CloseRFile(varf) 
+
+Symbol table: 
+varf 1
+varc 2
+
+Messages:
+2 
+
+------------------------------------------------------------------------
+Exe stack: 
+
+Symbol table: 
+varf 1
+varc 2
+
+Messages:
+2 
+
+------------------------------------------------------------------------
+Exe stack: 
+((OpenRFile (varf,read.txt)) ( ReadFile(varf,varc))) 
+(( Print varc ) CloseRFile(varf)) 
+
+Symbol table: 
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+(OpenRFile (varf,read.txt)) 
+( ReadFile(varf,varc)) 
+(( Print varc ) CloseRFile(varf)) 
+
+Symbol table: 
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+( ReadFile(varf,varc)) 
+(( Print varc ) CloseRFile(varf)) 
+
+Symbol table: 
+varf 1
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+(( Print varc ) CloseRFile(varf)) 
+
+Symbol table: 
+varf 1
+varc 2
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+( Print varc ) 
+CloseRFile(varf) 
+
+Symbol table: 
+varf 1
+varc 2
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+CloseRFile(varf) 
+
+Symbol table: 
+varf 1
+varc 2
+
+Messages:
+2 
+
+------------------------------------------------------------------------
+Exe stack: 
+
+Symbol table: 
+varf 1
+varc 2
+
+Messages:
+2 
+
+------------------------------------------------------------------------
+Exe stack: 
+((OpenRFile (varf,read.txt)) ( ReadFile(varf,varc))) 
+(( Print varc ) CloseRFile(varf)) 
+
+Symbol table: 
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+(OpenRFile (varf,read.txt)) 
+( ReadFile(varf,varc)) 
+(( Print varc ) CloseRFile(varf)) 
+
+Symbol table: 
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+( ReadFile(varf,varc)) 
+(( Print varc ) CloseRFile(varf)) 
+
+Symbol table: 
+varf 1
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+(( Print varc ) CloseRFile(varf)) 
+
+Symbol table: 
+varf 1
+varc 2
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+( Print varc ) 
+CloseRFile(varf) 
+
+Symbol table: 
+varf 1
+varc 2
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+CloseRFile(varf) 
+
+Symbol table: 
+varf 1
+varc 2
+
+Messages:
+2 
+
+------------------------------------------------------------------------
+Exe stack: 
+
+Symbol table: 
+varf 1
+varc 2
+
+Messages:
+2 
+
+------------------------------------------------------------------------
+Exe stack: 
+((OpenRFile (varf,read.txt)) ( ReadFile(varf,varc))) 
+(( Print varc ) CloseRFile(varf)) 
+
+Symbol table: 
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+(OpenRFile (varf,read.txt)) 
+( ReadFile(varf,varc)) 
+(( Print varc ) CloseRFile(varf)) 
+
+Symbol table: 
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+( ReadFile(varf,varc)) 
+(( Print varc ) CloseRFile(varf)) 
+
+Symbol table: 
+varf 1
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+(( Print varc ) CloseRFile(varf)) 
+
+Symbol table: 
+varf 1
+varc 2
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+( Print varc ) 
+CloseRFile(varf) 
+
+Symbol table: 
+varf 1
+varc 2
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+CloseRFile(varf) 
+
+Symbol table: 
+varf 1
+varc 2
+
+Messages:
+2 
+
+------------------------------------------------------------------------
+Exe stack: 
+
+Symbol table: 
+varf 1
+varc 2
+
+Messages:
+2 
+
+------------------------------------------------------------------------
+Exe stack: 
+((OpenRFile (varf,read.txt)) ( ReadFile(varf,varc))) 
+(( Print varc ) CloseRFile(varf)) 
+
+Symbol table: 
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+(OpenRFile (varf,read.txt)) 
+( ReadFile(varf,varc)) 
+(( Print varc ) CloseRFile(varf)) 
+
+Symbol table: 
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+( ReadFile(varf,varc)) 
+(( Print varc ) CloseRFile(varf)) 
+
+Symbol table: 
+varf 1
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+(( Print varc ) CloseRFile(varf)) 
+
+Symbol table: 
+varf 1
+varc 2
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+( Print varc ) 
+CloseRFile(varf) 
+
+Symbol table: 
+varf 1
+varc 2
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+CloseRFile(varf) 
+
+Symbol table: 
+varf 1
+varc 2
+
+Messages:
+2 
+
+------------------------------------------------------------------------
+Exe stack: 
+
+Symbol table: 
+varf 1
+varc 2
+
+Messages:
+2 
+
+------------------------------------------------------------------------
+Exe stack: 
+((OpenRFile (varf,read.txt)) ( ReadFile(varf,varc))) 
+(( Print varc ) CloseRFile(varf)) 
+
+Symbol table: 
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+(OpenRFile (varf,read.txt)) 
+( ReadFile(varf,varc)) 
+(( Print varc ) CloseRFile(varf)) 
+
+Symbol table: 
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+( ReadFile(varf,varc)) 
+(( Print varc ) CloseRFile(varf)) 
+
+Symbol table: 
+varf 1
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+(( Print varc ) CloseRFile(varf)) 
+
+Symbol table: 
+varf 1
+varc 2
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+( Print varc ) 
+CloseRFile(varf) 
+
+Symbol table: 
+varf 1
+varc 2
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+CloseRFile(varf) 
+
+Symbol table: 
+varf 1
+varc 2
+
+Messages:
+2 
+
+------------------------------------------------------------------------
+Exe stack: 
+
+Symbol table: 
+varf 1
+varc 2
+
+Messages:
+2 
+
+------------------------------------------------------------------------
+Exe stack: 
+((OpenRFile (varf,read.txt)) ( ReadFile(varf,varc))) 
+(( Print varc ) CloseRFile(varf)) 
+
+Symbol table: 
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+(OpenRFile (varf,read.txt)) 
+( ReadFile(varf,varc)) 
+(( Print varc ) CloseRFile(varf)) 
+
+Symbol table: 
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+( ReadFile(varf,varc)) 
+(( Print varc ) CloseRFile(varf)) 
+
+Symbol table: 
+varf 1
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+(( Print varc ) CloseRFile(varf)) 
+
+Symbol table: 
+varf 1
+varc 2
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+( Print varc ) 
+CloseRFile(varf) 
+
+Symbol table: 
+varf 1
+varc 2
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+CloseRFile(varf) 
+
+Symbol table: 
+varf 1
+varc 2
+
+Messages:
+2 
+
+------------------------------------------------------------------------
+Exe stack: 
+
+Symbol table: 
+varf 1
+varc 2
+
+Messages:
+2 
+
+------------------------------------------------------------------------
+Exe stack: 
+((OpenRFile (varf,read.txt)) ( ReadFile(varf,varc))) 
+(( Print varc ) CloseRFile(varf)) 
+
+Symbol table: 
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+(OpenRFile (varf,read.txt)) 
+( ReadFile(varf,varc)) 
+(( Print varc ) CloseRFile(varf)) 
+
+Symbol table: 
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+( ReadFile(varf,varc)) 
+(( Print varc ) CloseRFile(varf)) 
+
+Symbol table: 
+varf 1
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+(( Print varc ) CloseRFile(varf)) 
+
+Symbol table: 
+varf 1
+varc 0
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+( Print varc ) 
+CloseRFile(varf) 
+
+Symbol table: 
+varf 1
+varc 0
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+CloseRFile(varf) 
+
+Symbol table: 
+varf 1
+varc 0
+
+Messages:
+0 
+
+------------------------------------------------------------------------
+Exe stack: 
+
+Symbol table: 
+varf 1
+varc 0
+
+Messages:
+0 
+
+------------------------------------------------------------------------
+Exe stack: 
+((OpenRFile (varf,read.txt)) ( ReadFile(varf,varc))) 
+(( Print varc ) CloseRFile(varf)) 
+
+Symbol table: 
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+(OpenRFile (varf,read.txt)) 
+( ReadFile(varf,varc)) 
+(( Print varc ) CloseRFile(varf)) 
+
+Symbol table: 
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+( ReadFile(varf,varc)) 
+(( Print varc ) CloseRFile(varf)) 
+
+Symbol table: 
+varf 1
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+(( Print varc ) CloseRFile(varf)) 
+
+Symbol table: 
+varf 1
+varc 0
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+( Print varc ) 
+CloseRFile(varf) 
+
+Symbol table: 
+varf 1
+varc 0
+
+Messages:
+
+------------------------------------------------------------------------
+Exe stack: 
+CloseRFile(varf) 
+
+Symbol table: 
+varf 1
+varc 0
+
+Messages:
+0 
+
+------------------------------------------------------------------------
+Exe stack: 
+
+Symbol table: 
+varf 1
+varc 0
+
+Messages:
+0 
+
+------------------------------------------------------------------------

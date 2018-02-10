@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F0BABBA5-6E6F-4008-B5A1-F5C2AADD0E72}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>toyLanguage</RootNamespace>
+    <AssemblyName>toyLanguage</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="model\ArithExp.cs" />
+    <Compile Include="model\AssignStmt.cs" />
+    <Compile Include="model\CloseRFile.cs" />
+    <Compile Include="model\Command.cs" />
+    <Compile Include="model\CompStmt.cs" />
+    <Compile Include="model\ConstExp.cs" />
+    <Compile Include="controller\Controller.cs" />
+    <Compile Include="model\ExitCommand.cs" />
+    <Compile Include="model\Exp.cs" />
+    <Compile Include="model\FileData.cs" />
+    <Compile Include="model\IDGenerator.cs" />
+    <Compile Include="model\IfStmt.cs" />
+    <Compile Include="model\ReadFile.cs" />
+    <Compile Include="model\RunExample.cs" />
+    <Compile Include="model\TextMenu.cs" />
+    <Compile Include="utils\IMyDictionary.cs" />
+    <Compile Include="utils\IMyFileTable.cs" />
+    <Compile Include="utils\IMyList.cs" />
+    <Compile Include="utils\IMyStack.cs" />
+    <Compile Include="utils\MyFileTable.cs" />
+    <Compile Include="model\OpenRFile.cs" />
+    <Compile Include="repository\IRepository.cs" />
+    <Compile Include="model\IStmt.cs" />
+    <Compile Include="utils\MyDictionary.cs" />
+    <Compile Include="utils\MyList.cs" />
+    <Compile Include="utils\MyStack.cs" />
+    <Compile Include="model\PrgState.cs" />
+    <Compile Include="model\PrintStmt.cs" />
+    <Compile Include="view\Interpreter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="repository\Repository.cs" />
+    <Compile Include="model\VarExp.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

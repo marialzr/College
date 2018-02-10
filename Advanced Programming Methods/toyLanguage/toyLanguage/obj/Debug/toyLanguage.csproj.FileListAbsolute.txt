@@ -1,0 +1,7 @@
+C:\Users\MariaLazar\source\repos\toyLanguage\toyLanguage\bin\Debug\toyLanguage.exe.config
+C:\Users\MariaLazar\source\repos\toyLanguage\toyLanguage\bin\Debug\toyLanguage.exe
+C:\Users\MariaLazar\source\repos\toyLanguage\toyLanguage\bin\Debug\toyLanguage.pdb
+C:\Users\MariaLazar\source\repos\toyLanguage\toyLanguage\obj\Debug\toyLanguage.csprojResolveAssemblyReference.cache
+C:\Users\MariaLazar\source\repos\toyLanguage\toyLanguage\obj\Debug\toyLanguage.csproj.CoreCompileInputs.cache
+C:\Users\MariaLazar\source\repos\toyLanguage\toyLanguage\obj\Debug\toyLanguage.exe
+C:\Users\MariaLazar\source\repos\toyLanguage\toyLanguage\obj\Debug\toyLanguage.pdb
